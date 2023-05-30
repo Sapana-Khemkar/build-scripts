@@ -1,0 +1,11 @@
+{
+   "package_name": "exceldatareader",
+   "github_url": "https://github.com/ExcelDataReader/ExcelDataReader.git",
+   "version": "3.7.0-develop00365",
+   "default_branch": "develop",
+   "build_script": "exceldatareader_ubi8.7.sh",
+   "package_dir": "e/exceldatareader",
+   "docker_build": false,
+   "validate_build_script": true
+}
+
