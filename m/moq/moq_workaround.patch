@@ -1,0 +1,26 @@
+diff --git a/tests/Moq.Tests/FSharpCompatibilityFixture.cs b/tests/Moq.Tests/FSharpCompatibilityFixture.cs
+index 6dcf82a3..d2e5bac4 100644
+--- a/tests/Moq.Tests/FSharpCompatibilityFixture.cs
++++ b/tests/Moq.Tests/FSharpCompatibilityFixture.cs
+@@ -17,9 +17,9 @@ namespace Moq.Tests
+ 		{
+ 			get
+ 			{
+-				yield return new object[] { typeof(HasAbstractActionEvent).GetEvent(nameof(HasAbstractActionEvent.Event)) };
+-				yield return new object[] { typeof(HasAbstractEventHandlerEvent).GetEvent(nameof(HasAbstractEventHandlerEvent.Event)) };
+-				yield return new object[] { typeof(IHasActionEvent).GetEvent(nameof(IHasActionEvent.Event)) };
++				yield return new object[] { typeof(HasAbstractActionEvent).GetEvent(nameof(HasAbstractActionEvent)) };
++				yield return new object[] { typeof(HasAbstractEventHandlerEvent).GetEvent(nameof(HasAbstractEventHandlerEvent)) };
++				yield return new object[] { typeof(IHasActionEvent).GetEvent(nameof(IHasActionEvent)) };
+ 				yield return new object[] { typeof(IHasEventHandlerEvent).GetEvent(nameof(IHasEventHandlerEvent.Event)) };
+ 			}
+ 		}
+@@ -28,7 +28,7 @@ namespace Moq.Tests
+ 		{
+ 			get
+ 			{
+-				yield return new object[] { typeof(HasActionEvent).GetEvent(nameof(HasActionEvent.Event)) };
++				yield return new object[] { typeof(HasActionEvent).GetEvent(nameof(HasActionEvent)) };
+ 			}
+ 		}
+ 
